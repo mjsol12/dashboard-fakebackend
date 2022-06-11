@@ -1,0 +1,27 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 100px;
+}
+
+.selected {
+  background-color: rgb(250 250 250);
+  margin-top: 0;
+}
+.selected img path{
+  fill: #add8e6;
+}
+.toolbar a {
+  text-decoration: none;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.router-body {
+  margin-top: 60px
+}

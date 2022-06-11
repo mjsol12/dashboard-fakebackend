@@ -1,0 +1,24 @@
+<div class="card-container" >
+  <app-card *ngFor="let card of HeaderCards" [Data]="card"></app-card>
+</div>
+<div class="card-container flex-column padding-bottom-lg">
+  <div class="card-container filter-inline">
+    <div *ngFor="let model of PageModel">
+      <app-entity-filter (selected)="OnSelectedFilter($event)"
+                         (deselect)="OnSelectedFilter($event)"
+                         [data]="model" class="primary"></app-entity-filter>
+
+      <ng-template [ngIf]="model.children && model.children.length > 0">
+        <app-entity-filter *ngFor="let m of model.children"
+                           (selected)="OnSelectedFilter($event)"
+                           (deselect)="OnSelectedFilter($event)"
+                           class="secondary" [data]="m"></app-entity-filter>
+      </ng-template>
+
+    </div>
+  </div>
+
+  <div>
+    <app-table [Rows]="Data" [Headers]="Headers" (OnSelectedItem)="OnSelectedItem($event)"></app-table>
+  </div>
+</div>

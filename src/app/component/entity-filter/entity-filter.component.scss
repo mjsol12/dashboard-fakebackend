@@ -1,0 +1,31 @@
+.filter-button {
+  margin: auto;
+  margin-right: 12px;
+  padding: 6px;
+  font-size: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  color: #fff
+}
+.primary-button {
+  background-color: darkblue;
+  color: #fff
+}
+.secondary-button {
+  background-color: transparent;
+  color: #cccccc;
+  border: none;
+}
+.primary-button:not(.highlight-card):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.15);
+}
+.secondary-button:not(.highlight-card):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.15);
+}
+.selected {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}

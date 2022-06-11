@@ -1,0 +1,66 @@
+{
+  "Header": [
+    {
+      "type":"checkbox",
+      "name":"checkbox",
+      "title":""
+    },
+    {
+      "type":"string",
+      "name":"category",
+      "width": "300px",
+      "title":"Category"
+    },
+    {
+      "type":"currency",
+      "name":"categoryRevenue",
+      "title":"Revenue"
+    },
+    {
+      "type":"percentage",
+      "name":"roe2020",
+      "title":"2020 ROE"
+    },
+    {
+      "type":"currency",
+      "name":"revenue2020",
+      "title":"Revenue"
+    },
+    {
+      "type":"percentage",
+      "name":"ytdroe",
+      "title":"YTD ROE"
+    },
+    {
+      "type":"currency",
+      "name":"ytdroerevenue",
+      "title":"Revenue"
+    },
+    {
+      "type":"percentage",
+      "name":"roe2021",
+      "title":"2021 ROE"
+    },
+    {
+      "type":"currency",
+      "name":"roe2021Revenue",
+      "title":"Revenue"
+    },
+    {
+      "type":"percentage",
+      "name":"roe2022",
+      "title":"2022 ROE"
+    },
+    {
+      "type":"currency",
+      "name":"roe2022Revenue",
+      "title":"Revenue"
+    },
+    {
+      "type":"percentage",
+      "name":"lifetimeRoe",
+      "title":"LifeTime ROE"
+    }
+  ]
+
+}

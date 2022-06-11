@@ -1,0 +1,14 @@
+<table id="table">
+  <tr>
+    <th *ngFor="let i of Headers" [rowSpan]="i.rowspan ? i.rowspan : 1" [width]="i.width ? i.width: null">{{i.title}}</th>
+  </tr>
+  <tr *ngFor="let i of Rows">
+
+<!--    <td *ngIf="showCheckbox"><input type="checkbox" checked></td>-->
+    <td *ngFor="let h of Headers" (click)="SelectedItem(i[h.name])">
+      <span *ngIf="h.type === 'currency'">{{i[h.name] | currency}}</span>
+      <span *ngIf="h.type === 'percentage'">{{i[h.name] | percent:'2.0'}}</span>
+      <span *ngIf="h.type === 'string'">{{i[h.name]}}</span>
+    </td>
+  </tr>
+</table>

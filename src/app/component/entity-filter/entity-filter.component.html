@@ -1,0 +1,5 @@
+<button class="filter-button primary-button"
+        [class.secondary-button]="class === 'secondary'"
+        [class.primary-button]="class === 'primary'"
+        [class.selected]="inputSelected"
+        (click)="this.toggle()">{{data.name}}</button>
